@@ -36,4 +36,28 @@ class RomanNumeralTest < Minitest::Unit::TestCase
     assert_equal "use thousands method", RomanNumeral.new(1234).number_of_digits
   end
 
+  def test_ones_method
+    assert_equal "I", RomanNumeral.new(1).ones_method
+    assert_equal "II", RomanNumeral.new(2).ones_method
+    assert_equal "III", RomanNumeral.new(3).ones_method
+    assert_equal "IV", RomanNumeral.new(4).ones_method
+    assert_equal "V", RomanNumeral.new(5).ones_method
+    assert_equal "VI", RomanNumeral.new(6).ones_method
+    assert_equal "VII", RomanNumeral.new(7).ones_method
+    assert_equal "VIII", RomanNumeral.new(8).ones_method
+    assert_equal "VIIII", RomanNumeral.new(9).ones_method
+  end
+
+  def test_tens_method
+    assert_equal "XI", RomanNumeral.new(11).tens_method
+    assert_equal "XII", RomanNumeral.new(12).tens_method
+    assert_equal "XIII", RomanNumeral.new(13).tens_method
+    assert_equal "XIV", RomanNumeral.new(14).tens_method
+    assert_equal "XV", RomanNumeral.new(15).tens_method
+    assert_equal "XVI", RomanNumeral.new(16).tens_method
+    assert_equal "XVII", RomanNumeral.new(17).tens_method
+    assert_equal "XVIII", RomanNumeral.new(18).tens_method
+    assert_equal "XVIIII", RomanNumeral.new(19).tens_method
+  end
+
 end

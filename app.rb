@@ -37,6 +37,21 @@ class RomanNumeral
       "V" + ("I" * remainder)
     end
   end
+  
+  def tens_method
+    case @number
+    when 11..13
+      remainder = @number % 10
+      "X" + ("I" * remainder)
+    when 14
+      "XIV"
+    when 15
+      "XV"
+    when 16..19
+      remainder = @number % 15
+      "XV" + ("I" * remainder) 
+    end  
+  end
 
   def number_of_digits
     case break_down_number.count
