@@ -50,6 +50,20 @@ class RomanNumeral
     when 16..19
       remainder = @number % 15
       "XV" + ("I" * remainder) 
+    when 20
+      "XX"
+    when 21..23
+      remainder = @number % 20
+      "XX" + ("I" * remainder)
+    when 24
+      "XXIV"
+    when 25
+      "XXV"
+    when 26..29
+      remainder = @number % 25
+      "XXV" + ("I" * remainder)
+    when 30
+      "XXX"     
     end  
   end
 

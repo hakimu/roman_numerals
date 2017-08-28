@@ -58,6 +58,17 @@ class RomanNumeralTest < Minitest::Unit::TestCase
     assert_equal "XVII", RomanNumeral.new(17).tens_method
     assert_equal "XVIII", RomanNumeral.new(18).tens_method
     assert_equal "XVIIII", RomanNumeral.new(19).tens_method
+    assert_equal "XX", RomanNumeral.new(20).tens_method
+    assert_equal "XXI", RomanNumeral.new(21).tens_method
+    assert_equal "XXII", RomanNumeral.new(22).tens_method
+    assert_equal "XXIII", RomanNumeral.new(23).tens_method
+    assert_equal "XXIV", RomanNumeral.new(24).tens_method
+    assert_equal "XXV", RomanNumeral.new(25).tens_method
+    assert_equal "XXVI", RomanNumeral.new(26).tens_method
+    assert_equal "XXVII", RomanNumeral.new(27).tens_method
+    assert_equal "XXVIII", RomanNumeral.new(28).tens_method
+    assert_equal "XXVIIII", RomanNumeral.new(29).tens_method
+    assert_equal "XXX", RomanNumeral.new(30).tens_method
   end
 
 end
